@@ -3,8 +3,6 @@ from sklearn.svm import SVC
 from xgboost import XGBClassifier
 
 
-
-
 def build_models():
 rf = RandomForestClassifier(n_estimators=100, random_state=42)
 xgb = XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
