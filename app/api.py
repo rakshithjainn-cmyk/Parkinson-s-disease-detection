@@ -16,4 +16,4 @@ result = predict_single(sample.features)
 return {"prediction": result, "label": "Parkinson's" if result == 1 else "Healthy"}
 
 
-# Run: uvicorn app.api:app --reload --port 8000
+# Run with: uvicorn app.api:app --reload --port 8000
